@@ -1,3 +1,8 @@
 # testing folders
 png/*
 cropped/*
+
+# python package specific
+dist
+build
+*.egg-info
