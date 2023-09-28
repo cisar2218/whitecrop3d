@@ -17,4 +17,4 @@ Do this for all images in path specified:
 - increment version here in `setup.py` file
 - `$ python3 -m build`
 - `$ python3 -m twine upload dist/*`
-- note: guthub secret must be provided to authorize upload (not added to github repo yet)
+- note: github secret must be provided to authorize upload (not added to github repo yet)
