@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='whitecrop3d',
-    version='0.1.1',
+    version='0.2.0',
     url='https://github.com/cisar2218/whitecrop3d',
     author='Dušan Jánsky',
     author_email='cisar2218@gmail.com',
