@@ -15,6 +15,7 @@ Do this for all images in path specified:
 - for further github actions
 ### Upload new version to PYPI
 - increment version in `setup.py` file
+- `$ rm dist/*`
 - `$ python3 -m build`
 - `$ python3 -m twine upload dist/*`
 - note: github secret must be provided to authorize upload (not added to github repo yet)
