@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='whitecrop3d',
-    version='0.2.1',
+    version='0.2.2',
     url='https://github.com/cisar2218/whitecrop3d',
     author='Dušan Jánsky',
     author_email='cisar2218@gmail.com',
@@ -13,4 +13,9 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
+    entry_points={
+        'console_scripts': [
+            'whitecrop3d=src.cropping:main',
+        ],
+    },
 )
