@@ -5,6 +5,10 @@
 ## Usage
 - Install globaly: `$ sudo pip install whitecrop3d`
 - Use: `$ whitecrop3d path/to/your/pngs`
+
+### Preview
+![Preview](previews/image.png)
+
 ## How it works
 Do this for all images in path specified:
 1. Loads image
