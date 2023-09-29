@@ -2,6 +2,9 @@
 png/*
 cropped/*
 
+# python
+__pycache__
+
 # python package specific
 dist
 build

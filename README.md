@@ -3,8 +3,8 @@
 - Crops unnecessary white background from images. Meant to be for 3D models previews. 
 - Whitecrop3d was developed as temporary solution for problem of 3D graphics that was time expensive to solve. We worked on solving problem properly after this temporary solution was implemeneted.
 ## Usage
-- Install: `$ pip install whitecrop3d`
-- Use: `$ python3 -m whitecrop3d path/to/pngs`
+- Install globaly: `$ sudo pip install whitecrop3d`
+- Use: `$ whitecrop3d path/to/your/pngs`
 ## How it works
 Do this for all images in path specified:
 1. Loads image
@@ -15,7 +15,8 @@ Do this for all images in path specified:
 - for further github actions
 ### Upload new version to PYPI
 - increment version in `setup.py` file
-- `$ rm dist/*`
-- `$ python3 -m build`
-- `$ python3 -m twine upload dist/*`
+- run `publish_to_pypi.sh`, or manualy run:
+    - `$ rm dist/*`
+    - `$ python3 -m build`
+    - `$ python3 -m twine upload dist/*`
 - note: github secret must be provided to authorize upload (not added to github repo yet)
