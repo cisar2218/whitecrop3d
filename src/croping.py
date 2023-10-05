@@ -41,6 +41,8 @@ def process_file(filePath):
     return background
 
 
+
+
 def main():
     parser = argparse.ArgumentParser(description="Crops unnecessary white background from images in specified directory.")
     parser.add_argument("directory", type=str, help="Path to the directory containing pngs")
@@ -54,7 +56,12 @@ def main():
 
             # Check if it's a file and not a subdirectory
             if os.path.isfile(single_file_path):
-                process_file(single_file_path).save(single_file_path)
+                # process_file(single_file_path)
+                try:
+                    process_file(single_file_path)
+                except Exception as ex:
+                    print(ex)
+
 
     else:
         print(f"'{args.directory}' is not a valid directory!")

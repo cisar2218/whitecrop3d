@@ -1,6 +1,7 @@
 # testing folders
 png/*
 cropped/*
+files_testing/*
 
 # python
 __pycache__
