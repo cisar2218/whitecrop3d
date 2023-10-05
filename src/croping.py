@@ -56,9 +56,9 @@ def main():
 
             # Check if it's a file and not a subdirectory
             if os.path.isfile(single_file_path):
-                # process_file(single_file_path)
                 try:
-                    process_file(single_file_path)
+                    image = process_file(single_file_path)
+                    image.save(single_file_path)
                 except Exception as ex:
                     print(ex)
 
